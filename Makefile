@@ -6,7 +6,7 @@ export  ARCH  CROSS_COMPILE PATH
 
 obj-m := hello.o
 all:
-	$(CROSS_COMPILE)gcc -o hellotest hellotest.c 
+	# $(CROSS_COMPILE)gcc -o hellotest hellotest.c 
     $(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) modules
 
 .PHONE:clean
